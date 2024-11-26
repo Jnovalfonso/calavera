@@ -1,10 +1,7 @@
-export default async function RecipeDetails({ params }: { params: { id: string } }) {
-    const { id } = await params; 
-
+export default function RecipeDetails() {
     return (
         <main>
-            <h1>{id}</h1>
+            <h1>Recipe Details</h1>
         </main>
     );
 }
-
