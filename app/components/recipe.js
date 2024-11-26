@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export default function Notebook(props) {
+export default function Recipe(props) {
     let {id, title, author, imageUrl, category, lastModified, ingredients, instructions} = props;
 
       return (  
