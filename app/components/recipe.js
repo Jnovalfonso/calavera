@@ -2,21 +2,12 @@
 
 import Link from "next/link";
 
-export default function Recipe(props) {
+export default function Notebook(props) {
     let {id, title, author, imageUrl, category, lastModified, ingredients, instructions} = props;
 
       return (  
         <div className="w-80 border-gray-100 rounded-2xl shadow-lg border-2">
-            <Link 
-                href={
-                    {
-                        pathname: `/${id}`,
-                        query: {props}
-                    }
-                } 
-                passHref 
-                query={props}
-            >
+            <Link href={`/${id}`} passHref>
                 <img src={imageUrl}
                     alt="Recipe Image" 
                     className="w-full h-40 object-cover rounded-t-2xl" />
